@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Firm-Tofu10/MovieClub/issues"
   },
-  "homepage": "https://github.com/Firm-Tofu10/MovieClub#readme"
+  "homepage": "https://github.com/Firm-Tofu10/MovieClub#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
