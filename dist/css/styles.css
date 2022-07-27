@@ -11247,6 +11247,51 @@ header.masthead .site-heading .h1 {
   }
 }
 
+.stars{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.stars .fiveToOne{
+  text-align: center;
+  width: 500px;
+  height: 150px;
+}
+
+.fiveToOne input{
+  display: none;
+}
+
+.fiveToOne label{
+  font-size: 100px;
+  text-shadow: 1px 1px #bbb;
+  color: lightgray;
+  margin: 0 5px;
+}
+
+.fiveToOne label:before{
+  content:'★';
+}
+
+.fiveToOne input:checked ~ label{
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+.fiveToOne:not(:checked) > label:hover,
+.fiveToOne:not(:checked) > label:hover ~ label{
+color: gold;
+}
+
+.fiveToOne input:checked > label:hover,
+.fiveToOne input:checked > label:hover ~ label{
+color: gold;
+text-shadow: 1px 1px gold;
+}
+
+
+
 #Alien {
   width: 600px;
   height: 600px;
