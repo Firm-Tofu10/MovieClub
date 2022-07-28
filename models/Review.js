@@ -27,7 +27,7 @@ Review.init(
             type: DataTypes.INTEGER,
             references: {
                 model: 'reviewer',
-                key: 'id'
+                key: 'id' //this might need to be fixed
             }
         }
 
