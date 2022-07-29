@@ -102,3 +102,25 @@ router.put('/:id', withAuth, (req, res) => {
         console.log(err);
     });
 });
+
+//Delete review
+router.delete('/:id', withAuth, (req, res) => {
+    Review.destroy({
+        where: {
+            id: req.params.id
+        }
+    })
+    .then(reviewData => {
+        if (!reviewData) {
+            res.status(404).json({ message: 'No review found with this id'});
+            return;
+        }
+        res.json(reviewData);
+    })
+    .catch(err => {
+        res.status(500).json(err);
+        console.log(err);
+    });
+});
+
+module.exports = router;
