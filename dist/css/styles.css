@@ -11252,12 +11252,12 @@ header.masthead .site-heading .h1 {
   transform: translate(-50%, -50%);
 }
 
-.stars .fiveToOne{
+.stars .{
   text-align: center;
   width: 500px;
   height: 150px;
 }
-
+/* fix TODO backwards stars */
 .fiveToOne input{
   display: none;
 }
