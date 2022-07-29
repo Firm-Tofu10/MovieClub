@@ -63,3 +63,17 @@ router.get('/:id', (req, res) => {
         console.log(err);
     });
 });
+
+//CREATE new review
+router.post('/', withAuth, (req, res) => {
+    Review.create({
+        title: req.body.title,
+        description: req.body.description,
+        reviewer_id: req.session.reviewer_id
+    })
+    .then(reviewData => res.json(reviewData))
+    .catch(err => {
+        res.status(500).json(err);
+        console.log(err);
+    });
+});
