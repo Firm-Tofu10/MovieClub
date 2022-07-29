@@ -28,3 +28,38 @@ router.get('/', (req, res) => {
         console.log(err);
     });
 });
+
+//Get single review
+router.get('/:id', (req, res) => {
+    Review.findOne({
+        where: {
+            id: req.params.id
+        },
+        attributes: ['id', 'title', 'description', 'genre', 'reviewer_id'],
+        include: [
+            {
+                model: Reviewer,
+                attributes: ['name']
+            },
+            {
+                model: Comment,
+                attributes: ['id', 'comment_text', 'user_name'],
+                include: {
+                    model: User,
+                    attributes: ['user_name']
+                }
+            }
+        ]
+    })
+    .then(reviewData => {
+        if (!reviewData) {
+            res.status(404).json({ message: 'No Review found with this id'});
+            return
+        }
+        res.json(reviewData);
+    })
+    .catch(err => {
+        res.status(500).json(err);
+        console.log(err);
+    });
+});
