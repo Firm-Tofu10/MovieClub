@@ -113,4 +113,45 @@ router.get('/:id', (req, res) => {
     });
 });
 
+//Update user
+router.put('/:id', withAuth, (req, res) => {
+    User.update(req.body, {
+        individualHooks: true,
+        where: {
+            id: req.params.id
+        }
+    })
+    .then(userData => {
+        if(!userData[0]) {
+            res.status(404).json({ message: 'No user found with this id' })
+            return;
+        }
+        res.json(userData);
+    })
+    .catch(err => {
+        res.status(500).json(err);
+        console.log(err);
+    });
+});
+
+//Delete user
+router.delete('/:id', withAuth, (req, res) => {
+    User.destroy({
+        where: {
+            id: req.params.id
+        }
+    })
+    .then(userData => {
+        if (!userData) {
+            res.status(404).json({ message: 'No user found with this id'})
+            return;
+        }
+        res.json(userData);
+    })
+    .catch(err => {
+        res.status(500).json(err);
+        console.log(err);
+    });
+});
+
 module.exports = router;
