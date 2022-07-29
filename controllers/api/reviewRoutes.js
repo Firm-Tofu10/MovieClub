@@ -77,3 +77,28 @@ router.post('/', withAuth, (req, res) => {
         console.log(err);
     });
 });
+
+//Update review
+router.put('/:id', withAuth, (req, res) => {
+    Review.update({
+        title: req.body.title,
+        description: req.body.description
+    },
+    {
+        where: {
+            id: req.params.id
+        }
+    }
+    )
+    .then(reviewData => {
+        if (!reviewData) {
+            res.status(404).json({ message: 'No review found with this id'});
+            return;
+        }
+        res.json(reviewData);
+    })
+    .catch(err => {
+        res.status(500).json(err);
+        console.log(err);
+    });
+});
