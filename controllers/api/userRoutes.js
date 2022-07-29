@@ -1,6 +1,5 @@
 const router = require('express').Router();
-const { User } = reequire('../../models');
-const { Review } = require('../../models');
+const { User, Comment } = reequire('../../models');
 const withAuth = require('../../utils/auth');
 
 //Create new user
