@@ -11306,6 +11306,11 @@ color: gold;
 .fiveToOne input:checked > label:hover ~ label{
 color: gold;
 }
+.fiveToOne{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
 
 #Alien {
   width: -webkit-fill-available;
@@ -11317,3 +11322,6 @@ color: gold;
   flex-direction: row;
   justify-content: center;
 }
+
+
+
