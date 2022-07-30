@@ -34,3 +34,4 @@ Comment.belongsTo(Review, {
 });
 
 module.exports = { User, Review, Reviewer, Comment };
+

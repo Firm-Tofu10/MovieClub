@@ -1,8 +1,5 @@
-USE Mdata_db;
+USE Userdata_db;
 
-insert into titles(titles_name) values("Alien"),("Raiders of the Lost Ark");
+insert into MovieInfo(titles,ratings,stars) values("Alien","R",4),("Raiders of the Lost Ark","PG",4);
 
-INSERT into ratings(G,PG,PG13,R)values("G"),("PG"),("PG13"),("R");
-
-INSERT into stars(one,two,three,four,five)values("One",1),("Two",2),("Three",3),("Four",4),("Five",5);
-
+insert into UserLogin(user_names,password)values('Bryson','mypass'),('Kasey','mypass');

@@ -2480,8 +2480,6 @@ textarea.form-control-lg {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  -webkit-print-color-adjust: exact;
-          color-adjust: exact;
 }
 .form-check-input[type=radio] {
   border-radius: 50%;
@@ -11254,12 +11252,12 @@ header.masthead .site-heading .h1 {
   transform: translate(-50%, -50%);
 }
 
-.stars .fiveToOne{
+.stars .{
   text-align: center;
   width: 500px;
   height: 150px;
 }
-
+/* fix TODO backwards stars */
 .fiveToOne input{
   display: none;
 }
@@ -11277,6 +11275,7 @@ header.masthead .site-heading .h1 {
 .fiveToOne input:checked ~ label{
   color: gold;
 }
+
 .fiveToOne:not(:checked) > label:hover,
 .fiveToOne:not(:checked) > label:hover ~ label{
 color: gold;
@@ -11288,6 +11287,12 @@ color: gold;
 }
 
 #Alien {
-  width: 600px;
-  height: 600px;
+  width: -webkit-fill-available;
+  height: 800px;
+}
+
+.post-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
