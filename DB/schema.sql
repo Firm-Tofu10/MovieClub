@@ -1,15 +1,15 @@
 DROP DATABASE IF EXISTS Userdata_db;
 CREATE DATABASE Userdata_db;
 USE Userdata_db;
+
 CREATE TABLE MovieInfo (
 
-    id INT NOT NULL 
+    id INT NOT NULL, 
     titles VARCHAR(255) NOT NULL,
-
     ratings VARCHAR(10) NOT NULL,
-
     stars INT NOT NULL
 );
+
 CREATE TABLE UserLogin (
   
   id INT NOT NULL,
