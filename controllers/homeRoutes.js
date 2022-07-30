@@ -33,3 +33,34 @@ router.get('/', async (req, res) => {
     console.log(err);
   }
 });
+
+router.get('/review/:id', async (req, res) => {
+  try {
+    const reviewData = await Review.findByPk(req.params.id, {
+      include: [
+        {
+          model: User,
+          attributes: ['name'],
+        },
+        {
+          model: Reviewer,
+          attributer: ['name']
+        },
+        {
+          model: Comment,
+          attributes: ['comment_text']
+        },
+      ]
+    });
+
+    const reviews = reviewData.get({ plain: true });
+
+    res.render('review', {
+      ...review,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+    console.log(err);
+  }
+});
