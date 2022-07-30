@@ -76,6 +76,12 @@
   }
 }
 
+main {
+  border: solid black 3px;
+  padding: 20px;
+  margin: 0 5% 0 5%
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -647,6 +653,10 @@ progress {
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
     max-width: 720px;
+  }
+
+  main {
+    margin: 0 5% 0 5%
   }
 }
 @media (min-width: 992px) {
@@ -11077,6 +11087,8 @@ blockquote {
   }
 }
 @media (min-width: 992px) {
+
+
   #mainNav {
     transition: background-color 0.2s;
     /* Force Hardware Acceleration in WebKit */
@@ -11108,11 +11120,22 @@ blockquote {
     /* if the user changes the scrolling direction, we show the header */
     transform: translate3d(0, 100%, 0);
   }
+
+  main {
+    margin: 0 25% 0 25%;
+    border: solid black 3px;
+    padding: 20px
+  }
 }
 
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.sbmt-btn {
+  display: flex;
+  justify-content: center;
 }
 
 header.masthead {
@@ -11245,17 +11268,22 @@ header.masthead .site-heading .h1 {
   }
 }
 
-.stars .{
+.stars {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   width: 500px;
   height: 150px;
 }
+
 /* fix TODO backwards stars */
-.fiveToOne input{
+.fiveToOne input {
   display: none;
 }
 
-.fiveToOne label{
+.fiveToOne label {
   font-size: 50px;
   color: gray;
   margin: 0 5px;
