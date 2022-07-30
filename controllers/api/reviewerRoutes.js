@@ -1,4 +1,4 @@
-const router = require('expres').Router();
+const router = require('express').Router();
 const { Reviewer, Review } = require('../../models');
 const withAuth = require('../../utils/auth');
 
