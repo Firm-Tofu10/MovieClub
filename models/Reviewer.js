@@ -2,14 +2,13 @@ const {Model, DataTypes} = require('sequelize');
 const sequelize = require('../config/connection');
 const bcrypt = require('bcrypt');
 
-
-class User extends Model {
-    checkPassword(loginPw) {
-        return bcrypt.compareSync(loginPw, this.password);
+class Reviewer extends Model {
+    checkPassword(loginPW) {
+        return bcrypt.compareSync(loginPW, this.password);
     }
 }
 
-User.init(
+Reviewer.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -17,7 +16,7 @@ User.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        user_name: {
+        name: {
             type: DataTypes.STRING,
             allowNull: false,
         },
@@ -39,21 +38,21 @@ User.init(
     },
     {
         hooks: {
-            beforeCreate: async (newUserData) => {
-                newUserData.password = await bcrypt.hash(newUserData.password, 10);
-                return newUserData;
+            beforeCreate: async (reviewerData) => {
+                reviewerData.password = await bcrypt.hash(reviewerData.password, 10);
+                return reviewerData;
             },
-            beforeUpdate: async (updateUserData) => {
-                updateUserData.password = await bcrypt.hash(updateUserData.password, 10);
-                return updateUserData;
+            beforeUpdate: async (upadateReviewerData) => {
+                upadateReviewerData.password = await bcrypt.hash(upadateReviewerData.password, 10);
+                return upadateReviewerData;
             },
         },
         sequelize,
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'user',
+        modelName: 'reviewer',
     }
 );
 
-module.exports = User;
+module.exports = Reviewer;
