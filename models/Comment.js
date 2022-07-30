@@ -17,11 +17,7 @@ Comment.init(
         },
         user_name: {
             type: DataTypes.STRING,
-            allowNull: false,
-            references: {
-                model: 'user',
-                key: 'id'
-            },
+            allowNull: true,
         },
         review_id: {
             type: DataTypes.INTEGER,
@@ -30,6 +26,14 @@ Comment.init(
                 model: 'review',
                 key: 'id'
             }
+        },
+        user_id: {
+          type: DataTypes.INTEGER,
+          allowNull: false,
+          references: {
+              model: 'user',
+              key: 'id'
+          }
         },
     },
     {
