@@ -66,3 +66,25 @@ router.put('/:id', withAuth, (req, res) => {
         console.log(err);
     });
 });
+
+//delete reviewer
+router.delete('/:id', withAuth, (req, res) => {
+    User.destroy({
+        where: {
+            id: req.params.id
+        }
+    })
+    .then(reviewerData => {
+        if (!reviewerData) {
+            res.status(404).json({ message: 'No user found with this id'})
+            return;
+        }
+        res.json(reviewerData);
+    })
+    .catch(err => {
+        res.status(500).json(err);
+        console.log(err);
+    });
+});
+
+module.exports = router;
