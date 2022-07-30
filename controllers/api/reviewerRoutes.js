@@ -45,3 +45,24 @@ router.post('/logout', (req, res) => {
         res.status(404).end();
     }
 });
+
+//update reviewer
+router.put('/:id', withAuth, (req, res) => {
+    Reviewer.update(req.body, {
+        individualHooks: true,
+        where: {
+            id: req.params.id
+        }
+    })
+    .then(reviewerData => {
+        if(!reviewerData[0]) {
+            res.status(404).json({ message: 'No user found with this id' })
+            return;
+        }
+        res.json(reviewerData);
+    })
+    .catch(err => {
+        res.status(500).json(err);
+        console.log(err);
+    });
+});
