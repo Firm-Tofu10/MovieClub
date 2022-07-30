@@ -11110,9 +11110,20 @@ blockquote {
   }
 }
 
+main {
+  margin: 0 500px 0 500px;
+  border: solid black 3px;
+  padding: 20px
+}
+
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.sbmt-btn {
+  display: flex;
+  justify-content: center;
 }
 
 header.masthead {
@@ -11245,24 +11256,22 @@ header.masthead .site-heading .h1 {
   }
 }
 
-.stars{
+.stars {
   position: absolute;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.stars .{
   text-align: center;
   width: 500px;
   height: 150px;
 }
+
 /* fix TODO backwards stars */
-.fiveToOne input{
+.fiveToOne input {
   display: none;
 }
 
-.fiveToOne label{
+.fiveToOne label {
   font-size: 50px;
   color: gray;
   margin: 0 5px;
