@@ -10,7 +10,9 @@
     <ol>
         {{#each comments as |comment|}}
         <ul>
-            
+            <h3><a href="/review/{{review.id}}">{{review.title}}</a></h3>
         </ul>
+        {{/each}}
     </ol>
 </section>
+{{/if}}
