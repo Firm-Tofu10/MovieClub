@@ -1,1 +1,12 @@
 {{!-- View file for the various reviews --}}
+<article class="review">
+    <div class="title">
+        <a href="/review/{{id}}">{{title}}</a>
+    </div>
+    <div class="body">
+        {{description}}
+    </div>
+    <div class="author">
+        <p>Posted by {{reviewer.name}} on {{format_date created_at}}</p>
+    </div>
+</article>
