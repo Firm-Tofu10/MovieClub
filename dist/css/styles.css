@@ -84,7 +84,7 @@ main {
 
 .wrapper {
   padding: 30px;
-  background-color: green;
+  background-color: white;
   display: flex;
   justify-content: left;
 }
