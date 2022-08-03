@@ -11518,9 +11518,13 @@ color: gold;
 }
 
 .redBtn {
-color:red;
+color:blue;
 }
 
 .greenBtn {
 color:green;
+}
+
+.background {
+  background-image: url(../assets/img/jefferson-santos-9SoCnyQmkzI-unsplash.jpg);
 }
