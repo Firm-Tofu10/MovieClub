@@ -169,7 +169,7 @@ left: 2px;
 top: 2px;
 display: none;
 }
-.poll-area label:hover .row .circle::after{
+.poll-form label:hover .row .circle::after{
 display: block;
 background: #e6e6e6;
 }
