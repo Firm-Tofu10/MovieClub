@@ -82,6 +82,12 @@ main {
   margin: 0 5% 0 5%
 }
 
+.wrapper {
+  padding: 30px;
+  background-color: green;
+  display: flexbox;
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);

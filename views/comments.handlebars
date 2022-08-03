@@ -1,12 +1,18 @@
-<div class="comments">
-    {{#each this}}
-    <section class="comment">
-        <div class="author">
-            {{user.user_name}} on {{format_date created_at}}
-        </div>
-        <div class="text">
-            {{comment_text}}
-        </div>
-    </section>
-    {{/each}}
-</div>
+<form class="comment-form">
+    <div class="comments">
+        {{#each this}}
+        <section class="comment">
+            <div class="author">
+                {{user.user_name}} on {{format_date created_at}}
+            </div>
+            <div class="text">
+                {{comment_text}}
+            </div>
+        </section>
+        {{/each}}
+    </div>
+    <div>
+        <button type="submit">Add Comment</button>
+    </div>
+</form>
+<script src="../dist/js/comment.js"></script>
