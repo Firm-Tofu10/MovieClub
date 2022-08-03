@@ -1,6 +1,24 @@
 {{!-- View file for the various reviews --}}
-<article class="review">
-    <div class="title">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="post-preview">
+          <a href="/api/review/{{id}}">
+            <h2 class="post-title">{{title}}</h2>
+            <h3 class="post-subtitle">{{description}}</h3>
+            <img id="Alien"
+              src='https://m.media-amazon.com/images/M/MV5BOGQzZTBjMjQtOTVmMS00NGE5LWEyYmMtOGQ1ZGZjNmRkYjFhXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg'>
+          </a>
+
+
+
+
+        </div>
+      </div>
+    </div>  
+  </div>
+
+    {{!-- <div class="title">
         <a href="/review/{{id}}">{{title}}</a>
     </div>
     <div class="body">
@@ -9,6 +27,6 @@
     <div class="author">
         <p>Posted by {{reviewer.name}} on {{created_at}}</p>
     </div>
-</article>
+</article> --}}
 
 {{!-- Not sure if this should be in a partial folder or not --}}
