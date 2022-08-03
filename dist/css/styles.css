@@ -11408,7 +11408,7 @@ header.masthead .site-heading .h1 {
 }
 
 .stars {
-  position: absolute;
+  position: flex;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -11449,11 +11449,15 @@ color: gold;
   display: flex;
   justify-content:center;
   align-items: center;
+  flex-direction: row;
 }
 
 #Alien {
-  width: -webkit-fill-available;
-  height: -webkit-fill-available;
+  width: 600px;
+  height: 600px;
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
   /* object-fit: cover; */
 }
 
@@ -11468,8 +11472,20 @@ color: gold;
 }
 
 .textBox {
- display: none;
+ display:flex;
+ justify-content: center;
+ flex-direction: row;
 }
 .stars {
-  display: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.redBtn {
+color:red;
+}
+
+.greenBtn {
+color:green;
 }
