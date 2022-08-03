@@ -1,7 +1,8 @@
 const sequelize = require('../config/connection');
-const {User, Review} = require('../models');
+const {User, Review, Reviewer} = require('../models');
 
 const userData = require('./userData.json')
+const reviewerData = require('./reviewerData.json')
 const reviewData = require('./reviewData.json');
 
 const seedDatabase = async () => {
@@ -12,9 +13,15 @@ const seedDatabase = async () => {
     returning: true,
   });
 
+  const reviewers = await Reviewer.bulkCreate(reviewerData, {
+    individualHooks: true,
+    returning: true,
+  })
+
   for (const review of reviewData) {
     await Review.create({
       ...review,
+      reviewer_id: reviewers[Math.floor(Math.random() * reviewers.length)].id,
     })
   }
 
