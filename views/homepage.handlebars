@@ -7,10 +7,10 @@
             <h2 class="post-title">{{movie.title}}</h2>
             <h3 class="post-subtitle">{{movie.description}}</h3>
             <img id="Alien"
-              src='https://m.media-amazon.com/images/M/MV5BOGQzZTBjMjQtOTVmMS00NGE5LWEyYmMtOGQ1ZGZjNmRkYjFhXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg'>
+              src={{movie.image}}>
           </a>
           <p class="post-meta">
-            Posted by {{reviewer.name}} on {{created_at}}
+            Posted by {{reviewer.name}} on {{movie.created_at}}
           </p>
           <form>
             <div class="card p-3">
