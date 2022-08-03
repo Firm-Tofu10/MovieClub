@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-auto">
+        <h2>Hey there, {{name}}</h2>
+    </div>
+</div>
+
+{{#if comments.length}}
+<section>
+    <h2>Your Comments</h2>
+    <ol>
+        {{#each comments as |comment|}}
+        <ul>
+            <h3><a href="/review/{{review.id}}">{{review.title}}</a></h3>
+        </ul>
+        {{/each}}
+    </ol>
+</section>
+{{/if}}
