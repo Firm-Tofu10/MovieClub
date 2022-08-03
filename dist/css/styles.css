@@ -87,6 +87,14 @@ main {
   background-color: white;
   display: flex;
   justify-content: left;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  padding: 30px;
+  background: #fff;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.1);
 }
 
 .poll-form {
