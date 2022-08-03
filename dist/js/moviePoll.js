@@ -1,5 +1,4 @@
-
-const options = document.querySelectorAll("label");
+const options = document.querySelectorAll("input");
 for (let i = 0; i < options.length; i++) {
   options[i].addEventListener("click", ()=>{
     for (let j = 0; j < options.length; j++) {
