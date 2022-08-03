@@ -38,10 +38,10 @@ router.get('/review/:id', async (req, res) => {
   try {
     const reviewData = await Review.findByPk(req.params.id, {
       include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
+        // {
+        //   model: User,
+        //   attributes: ['name'],
+        // },
         {
           model: Reviewer,
           attributer: ['name']
@@ -53,7 +53,7 @@ router.get('/review/:id', async (req, res) => {
       ]
     });
 
-    const reviews = reviewData.get({ plain: true });
+    const review = reviewData.get({ plain: true });
 
     res.render('review', {
       ...review,

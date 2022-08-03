@@ -19,9 +19,18 @@ Review.init(
             type: DataTypes.TEXT,
             allowNull: false,
         },
+        image: {
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
         genre: {
             type: DataTypes.STRING,
             allowNull: false,
+        },
+        created_at: {
+            type: DataTypes.DATE,
+            allowNull: false,
+            defaultValue: DataTypes.NOW,
         },
         reviewer_id: {
             type: DataTypes.INTEGER,

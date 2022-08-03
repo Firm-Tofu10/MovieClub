@@ -1,19 +1,22 @@
 [
   {
-    "title": "Raiders of the Lost Ark",
-    "description": "What an adventure this takes you on! Indiana Jones takes on Nazis in the desert to stop them from finding the Ark of the Covenant.  It is a face-melting good movie.",
+    "title": "Alien",
+    "description": "Based on a story by O'Bannon and Ronald Shusett, Alien is a story of a spaceship crew that must struggle against a creature known as the Xenomorph for there individual survival.",
+    "image": "https://m.media-amazon.com/images/M/MV5BOGQzZTBjMjQtOTVmMS00NGE5LWEyYmMtOGQ1ZGZjNmRkYjFhXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg",
     "genre": "Action/Adventure",
     "reviewer_id": 1
   },
   {
-    "title": "Dodgeball",
-    "description": "'If you can dodge a wrench, you can dodge a ball.' Absolute classic",
-    "genre": "Comedy",
+    "title": "Jurassic Park",
+    "description": "Jurassic Park is about a select group chosen to tour an island theme park populated by dinosaurs created from prehistoric DNA.",
+    "image": "https://m.media-amazon.com/images/M/MV5BMjM2MDgxMDg0Nl5BMl5BanBnXkFtZTgwNTM2OTM5NDE@._V1_FMjpg_UX1000_.jpg",
+    "genre": "Action/Adventure",
     "reviewer_id": 1
   },
   {
-    "title": "Jurassic Park",
-    "description": "The original, a masterpiece of epic proportions",
+    "title": "Raiders of the Lost Ark",
+    "description": "What an adventure this takes you on! Indiana Jones takes on Nazis in the desert to stop them from finding the Ark of the Covenant.  It is a face-melting good movie.",
+    "image": "https://m.media-amazon.com/images/M/MV5BNTU2ODkyY2MtMjU1NC00NjE1LWEzYjgtMWQ3MzRhMTE0NDc0XkEyXkFqcGdeQXVyMjM4MzQ4OTQ@._V1_.jpg",
     "genre": "Action/Adventure",
     "reviewer_id": 1
   }

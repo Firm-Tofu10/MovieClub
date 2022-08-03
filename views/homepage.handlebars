@@ -1,18 +1,17 @@
-  {{#each review as |movie|}}
+  {{#each reviews as |review|}}
   <div class="container px-4 px-lg-5">
     <div class="row gx-4 gx-lg-5 justify-content-center">
       <div class="col-md-10 col-lg-8 col-xl-7">
         <div class="post-preview">
-          <a href="/api/review/{{movie.id}}">
-            <h2 class="post-title">{{movie.title}}</h2>
-            <h3 class="post-subtitle">{{movie.description}}</h3>
+          <a href="/review/{{review.id}}">
+            <h2 class="post-title">{{review.title}}</h2>
+            <h3 class="post-subtitle">{{review.description}}</h3>
             <img id="Alien"
-              src='https://m.media-amazon.com/images/M/MV5BOGQzZTBjMjQtOTVmMS00NGE5LWEyYmMtOGQ1ZGZjNmRkYjFhXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg'>
+              src={{review.image}}>
           </a>
           <p class="post-meta">
-            Posted by
-            <a href="#!">Max Powers</a>
-            on July 26, 2022
+            Posted by {{reviewer.name}} on {{format_date review.created_at}}
+          </p>
           <form>
             <div class="card p-3">
               <div class="stars">
@@ -34,7 +33,7 @@
               </p>
             </div>
           </form>
-          
+
         </div>
       </div>
     </div>  
