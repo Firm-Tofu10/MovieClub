@@ -7,13 +7,13 @@
   },
   {
     "id": 2,
-    "name": "Lernantino",
+    "user_name": "Lernantino",
     "email": "lernantino@gmail.com",
     "password": "password12345"
   },
   {
     "id": 3,
-    "name": "Amiko",
+    "user_name": "Amiko",
     "email": "amiko2k20@aol.com",
     "password": "password12345"
   }
