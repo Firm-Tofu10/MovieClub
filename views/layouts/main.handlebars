@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
-  <title>Document</title>
+  <title>Movie Club</title>
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico"/>
   <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
@@ -17,14 +18,8 @@
 <body>
   {{!-- Navbar --}}
   <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
-    {{#if logged_in}}
-    <a href="/profile">Profile</a> |
-    <button class="no-button" id="logout">Logout</button>
-    {{else}}
-    <a href="/login">Login</a>
-    {{/if}}
     <div class="container px-4 px-lg-5">
-      <a class="navbar-brand" href="/">Start Bootstrap</a>
+      <a class="navbar-brand" href="/">We Love Movies!</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -32,10 +27,15 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto py-4 py-lg-0">
               {{!-- All of these need associated routes. Or some of them, if we don't use all of them --}}
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="_">Home</a></li>
+              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</a></li>
               <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="_">About</a></li>
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="_">Sample Post</a></li>
               <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="_">Contact</a></li>
+              {{#if logged_in}}
+                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/profile">Profile</a></li>
+                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Log Out</a></li>
+              {{else}}
+                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/login">Login</a></li>
+              {{/if}}
             </ul>
           </div>
     </div>
@@ -43,7 +43,7 @@
 
     {{!-- Header --}}
     {{!-- This backgroud image can changed do whatever we deem fit. --}}
-    <header class="masthead" style="background-image: url('./assets/img/backgroundmoviereel.avif')">
+    <header class="masthead" style="background-image: url('/assets/img/backgroundmoviereel.jpg')">
     <div class="container position-relative px-4 px-lg-5">
       <div class="row gx-4 gx-lg-5 justify-content-center">
         <div class="col-md-10 col-lg-8 col-xl-7">
