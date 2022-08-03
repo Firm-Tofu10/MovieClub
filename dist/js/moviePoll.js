@@ -1,4 +1,3 @@
-
 const options = document.querySelectorAll("label");
 for (let i = 0; i < options.length; i++) {
   options[i].addEventListener("click", ()=>{
@@ -36,3 +35,4 @@ for (let i = 0; i < options.length; i++) {
     }
   });
 }
+

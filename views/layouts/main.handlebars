@@ -64,18 +64,19 @@
         {{{ body }}}
       </main>
       <div class="wrapper">
-      <h5>What movie should Max Powers review next?</h5>
+      <header>What movie should Max Powers review next?</header>
       <div class="poll-form">
-        <input type="checkbox" name="poll" id="movie1">
-        <input type="checkbox" name="poll" id="movie2">
-        <input type="checkbox" name="poll" id="movie3">
+        <input type="checkbox" name="poll" id="movie1" value="movie1">
+        <input type="checkbox" name="poll" id="movie2" value="movie2">
+        <input type="checkbox" name="poll" id="movie3" value="movie3">
+        <input type="checkbox" name="poll" id="movie4" value="movie4">
         <label for="movie1" class="movie1">
         <div class="row">
           <div class="column">
             <span class="circle"></span>
             <span class="text">Never Ending Story</span>
           </div>
-          <span class="percent"></span>
+          <span class="percent">55%</span>
         </div>
         <div class="progress" id="pstyle1" style='--w:55;'></div>
       </label>
@@ -85,9 +86,9 @@
             <span class="circle"></span>
             <span class="text">The Thing</span>
           </div>
-          <span class="percent"></span>
+          <span class="percent">75%</span>
         </div>
-        <div class="progress" id="pstyle2" style='--w:80;'></div>
+        <div class="progress" id="pstyle2" style='--w:75;'></div>
       </label>
       <label for="movie3" class="movie3">
         <div class="row">
@@ -95,9 +96,19 @@
             <span class="circle"></span>
             <span class="text">Predator</span>
           </div>
-          <span class="percent"></span>
+          <span class="percent">20%</span>
         </div>
         <div class="progress" id="pstyle3" style='--w:20;'></div>
+      </label>
+      <label for="movie4" class="movie4">
+        <div class="row">
+          <div class="column">
+            <span class="circle"></span>
+            <span class="text">The Goonies</span>
+          </div>
+          <span class="percent">12%</span>
+        </div>
+        <div class="progress" id="pstyle4" style='--w:12;'></div>
       </label>
       </div>
     </div>
@@ -139,7 +150,7 @@
   {{!-- Bootstrap core js --}}
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   {{!-- Start Bootstrap core js --}}
-  <script src="/js/scripts.js"></script>
-  <script src="/dist/js/moviePoll.js"></script>
+  <script src="../../src/js/scripts.js"></script>
+  <script src="../../dist/js/moviePoll.js"></script>
 </body>
 </html>
