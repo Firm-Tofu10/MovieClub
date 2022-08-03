@@ -6,7 +6,7 @@ const exphbs = require('express-handlebars');
 const helpers = require('./utils/helper');
 const hbs = exphbs.create({helpers});
 // const user = require('.models/user');
-// const path = require('path');
+const path = require('path');
 
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store)
@@ -26,9 +26,10 @@ const sess = {
 app.use(session(sess))
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
-app.use(express.urlencoded({extended: true}));
 app.use(express.json());
-// console.log("HERE")
+app.use(express.urlencoded({extended: true}));
+app.use(express.static(path.join(__dirname, 'dist')));
+
 app.use(routes);
 
 sequelize.sync({force: false}).then(() => {

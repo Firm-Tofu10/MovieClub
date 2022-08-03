@@ -6,10 +6,10 @@ router.get('/', async (req, res) => {
   try {
     const reviewData = await Review.findAll({
       include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
+        // {
+        //   model: User,
+        //   attributes: ['name'],
+        // },
         {
           model: Reviewer,
           attributer: ['name']
@@ -23,7 +23,7 @@ router.get('/', async (req, res) => {
 
     const reviews = reviewData.map((reviews) => reviews.get({ plain: true }));
 
-    res.render('homepage', {
+    res.render('review', {
       reviews,
       logged_in: req.session.logged_in
     });
