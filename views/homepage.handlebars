@@ -1,0 +1,42 @@
+  {{#each review as |movie|}}
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="post-preview">
+          <a href="/api/review/{{movie.id}}">
+            <h2 class="post-title">{{movie.title}}</h2>
+            <h3 class="post-subtitle">{{movie.description}}</h3>
+            <img id="Alien"
+              src='https://m.media-amazon.com/images/M/MV5BOGQzZTBjMjQtOTVmMS00NGE5LWEyYmMtOGQ1ZGZjNmRkYjFhXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg'>
+          </a>
+          <p class="post-meta">
+            Posted by
+            <a href="#!">Max Powers</a>
+            on July 26, 2022
+          <form>
+            <div class="card p-3">
+              <div class="stars">
+                <input class="textBox" type="text" placeholder="user review">
+                <div class="fiveToOne">
+                  <input type="radio" id="One" name="rate" value="1">
+                  <label for="One"></label>
+                  <input type="radio" id="two" name="rate" value="2">
+                  <label for="two"></label>
+                  <input type="radio" id="three" name="rate" value="3">
+                  <label for="three"></label>
+                  <input type="radio" id="four" name="rate" value="4">
+                  <label for="four"></label>
+                  <input type="radio" id="five" name="rate" value="5">
+                  <label for="five"></label>
+                  <span class="result"></span>
+                </div>
+              </div>
+              </p>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+    </div>  
+  </div>
+{{/each}}
