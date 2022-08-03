@@ -11251,7 +11251,7 @@ blockquote {
   }
 
   main {
-    margin: 0 25% 0 25%;
+    margin: 0 10% 0 10%;
     border: solid black 3px;
     padding: 20px
   }
@@ -11453,7 +11453,8 @@ color: gold;
 
 #Alien {
   width: -webkit-fill-available;
-  height: 800px;
+  height: -webkit-fill-available;
+  /* object-fit: cover; */
 }
 
 .post-img {

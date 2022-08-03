@@ -3,14 +3,14 @@
     <div class="row gx-4 gx-lg-5 justify-content-center">
       <div class="col-md-10 col-lg-8 col-xl-7">
         <div class="post-preview">
-          <a href="/api/review/{{review.id}}">
+          <a href="/review/{{review.id}}">
             <h2 class="post-title">{{review.title}}</h2>
             <h3 class="post-subtitle">{{review.description}}</h3>
             <img id="Alien"
               src={{review.image}}>
           </a>
           <p class="post-meta">
-            Posted by {{reviewer.name}} on {{review.created_at}}
+            Posted by {{reviewer.name}} on {{format_date review.created_at}}
           </p>
           <form>
             <div class="card p-3">
