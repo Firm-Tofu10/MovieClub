@@ -105,6 +105,10 @@ label.movie3.selected {
   border: 2px solid #cfbd00;
 }
 
+label.movie4.selected {
+  border: 2px solid #01638c;
+}
+
 div#pstyle1::after {
   background: #cf2d00 !important;
 }
@@ -117,29 +121,41 @@ div#pstyle3::after {
   background:  #cfbd00 !important;
 }
 
+div#pstyle4::after {
+  background: #01638c !important;
+}
+
 label.movie1.selected .row .circle{
   border-color: #cf2d00 !important;
 }
 
 label.movie2.selected .row .circle{
   border-color: #4bcc00 !important;
-}
+  }
 
-label.movie3.selected .row .circle{
-  border-color: #cfbd00 !important;
-}
+  label.movie3.selected .row .circle{
+    border-color: #cfbd00 !important;
+  }
+
+  label.movie4.selected .row .circle{
+    border-color: #01638c !important;
+  }
 
 label.movie1 .row .circle::after{
-  background: #cf2d00 !important;
-}
+    background: #cf2d00 !important;
+  }
 
-label.movie2 .row .circle::after{
-  background: #4bcc00 !important;
-}
+  label.movie2 .row .circle::after{
+    background: #4bcc00 !important;
+  }
 
-label.movie3 .row .circle::after{
-  background: #cfbd00 !important;
-}
+  label.movie3 .row .circle::after{
+    background: #cfbd00 !important;
+  }
+
+  label.movie4 .row .circle::after{
+    background: #01638c !important;
+  }
 
 label .row{
 display: flex;
