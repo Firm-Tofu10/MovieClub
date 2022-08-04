@@ -3,36 +3,36 @@ const { Review, User, Reviewer, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
-  try {
-    const reviewData = await Review.findAll({
-      include: [
+  //try {
+    //const reviewData = await Review.findAll({
+     // include: [
         // {
         //   model: User,
         //   attributes: ['name'],
         // },
-        {
-          model: Reviewer,
-          attributer: ['name']
-        },
-        {
-          model: Comment,
-          attributes: ['comment_text']
-        },
-      ],
-    });
+      //  {
+        //  model: Reviewer,
+          // attributer: ['name']
+        // },
+        // {
+          // model: Comment,
+          // attributes: ['comment_text']
+        // },
+      // ],
+   // });
 
-    const reviews = reviewData.map((reviews) => reviews.get({ plain: true }));
+    // const reviews = reviewData.map((reviews) => reviews.get({ plain: true }));
 
-    res.render('homepage', {
-      reviews,
+    res.render('test', {
+     // reviews,
       logged_in: req.session.logged_in
     });
 
-  } catch (err) {
-    res.status(500).json(err);
-    console.log(err);
-  }
-});
+  // catch (err) {
+    //res.status(500).json(err);
+  //  console.log(err);
+ // }
+  });
 
 router.get('/review/:id', async (req, res) => {
   try {
