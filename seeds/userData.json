@@ -16,5 +16,11 @@
     "user_name": "Amiko",
     "email": "amiko2k20@aol.com",
     "password": "password12345"
+  },
+  {
+    "id": 4,
+    "user_name": "Constantli",
+    "email": "Const4ntl1@whatever.com",
+    "password": "password12345"
   }
 ]

@@ -6,7 +6,7 @@ const withAuth = require('../../utils/auth');
 router.get('/', async (req, res) => {
     try {
         const commentData = await Comment.findAll({
-            attributes: ['id', 'comment_text', 'user_name', 'review_id'],
+            attributes: ['id', 'comment_text', 'user_id', 'review_id'],
             include: [{
                 model: Review,
                 attributes: ['id', 'title', 'description', 'genre', 'reviewer_id']
