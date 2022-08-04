@@ -11446,7 +11446,7 @@ header.masthead .site-heading .h1 {
   position: flex;
   top: 45%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
   text-align: center;
   width: 500px;
   height: 150px;
@@ -11519,12 +11519,12 @@ color: gold;
 
 .redBtn {
 color:blue;
-display: block;
+display: flex;
 }
 
 .greenBtn {
 color:green;
-display: hide;
+display: flex;
 }
 
 .background {
