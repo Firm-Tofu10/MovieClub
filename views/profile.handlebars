@@ -5,15 +5,14 @@
   </div>
 
   {{#if comments.length}}
-  <section>
+  <div>
       <h2>Your Comments</h2>
       <ol>
           {{#each comments as |comment|}}
           <ul>
-              <h3><a href="/review/{{review.id}}">{{review.title}}</a></h3>
+              <h3><a href="/comment/{{comment.review_id}}">{{comment.comment_text}}</a></h3>
           </ul>
           {{/each}}
       </ol>
-  </section>
+  </div>
   {{/if}}
-</main>
