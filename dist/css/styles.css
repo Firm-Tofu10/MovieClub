@@ -265,6 +265,11 @@ input[type="checkbox"]{
   display: none;
 }
 
+input[type="button"],
+input[type="submit"]{
+  display: block;
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
