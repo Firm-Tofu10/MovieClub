@@ -13,6 +13,7 @@
             Posted by {{reviewer.name}} on {{format_date created_at}}
           </p>
         </div>
+          {{#if comments}}
           <div class="comment-box">
             <div class="comment-box-header">Comments</div>
               {{#each comments as |comment|}}
@@ -20,6 +21,7 @@
               <div class="comment-item">{{comment.comment_text}}</div>
               {{/each}}
           </div>
+          {{/if}}
       </div>
     </div>  
   </div>
