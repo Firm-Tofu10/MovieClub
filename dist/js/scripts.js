@@ -35,4 +35,4 @@ function unHide() {
     } else {
       x.style.display = "none";
     }
-  }
+  };
