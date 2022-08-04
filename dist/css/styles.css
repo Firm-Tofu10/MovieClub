@@ -99,7 +99,7 @@ main {
 
 
 .wrapper{
-  margin: 10px auto 10px auto;
+  margin: 2.5% auto 2.5% auto;
   display: flex;
   flex-direction: column;
   padding: 30px;
@@ -274,7 +274,7 @@ body {
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
-  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -508,7 +508,7 @@ caption {
 
 th {
   text-align: inherit;
-  text-align: -webkit-match-parent;
+  text-align: match-parent;
 }
 
 thead,
@@ -2341,6 +2341,10 @@ progress {
   .table-responsive-lg {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+  }
+
+  main {
+    margin-bottom: 2.5%;
   }
 }
 @media (max-width: 1199.98px) {
@@ -11331,7 +11335,7 @@ footer {
 
 header.masthead {
   position: relative;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5%;
   padding-top: calc(8rem + 57px);
   padding-bottom: 8rem;
   background: no-repeat center center;
@@ -11504,7 +11508,7 @@ color: gold;
   flex-direction: row;
 }
 
-#Alien {
+.movie-img {
   width: 100%;
   height: auto;
   justify-content: center;

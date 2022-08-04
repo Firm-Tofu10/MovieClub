@@ -1,12 +1,12 @@
 const router = require('express').Router();
-const { User, Comment } = require('../../models');
+const { User, Comment, Review } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 //Create new user
 router.post('/', async (req, res) => {
     try {
         const userData = await User.create(req.body);
-
+        console.log(userData)
         req.session.save(() => {
             req.session.user_id = userData.id;
             req.session.logged_in = true;
@@ -85,13 +85,13 @@ router.get('/:id', (req, res) => {
             id: req.params.id
         },
         include: [
-            {
-                model: Review,
-                attributes: ['id', 'title', 'description', 'genre', 'reviewer_id']
-            },
+            // {
+            //     model: Review,
+            //     attributes: ['id', 'title', 'description', 'genre', 'reviewer_id']
+            // },
             {
                 model: Comment,
-                attributes: ['id', 'comment_text', 'user_name', 'review_id'],
+                attributes: ['id', 'comment_text', 'user_id', 'review_id'],
                 include: {
                     model: Review,
                     attributes: ['title']
