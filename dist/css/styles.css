@@ -11510,7 +11510,9 @@ color: gold;
 }
 
 .comment-box {
-  border: solid 2px black;
+  border-left: solid 2px black;
+  border-right: solid 2px black;
+  border-top: solid 2px black;
   display: flex;
   flex-direction: column;
 }
@@ -11523,7 +11525,15 @@ color: gold;
 }
 
 .comment-box-item {
+  padding: 4px 4px 0 4px;
+  text-align: justify;
+  vertical-align: middle;
+  word-wrap: normal;
+}
+
+.comment-item {
   padding: 4px;
+  border-bottom: solid 2px black;
 }
 
 .redBtn {

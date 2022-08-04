@@ -13,6 +13,13 @@
             Posted by {{reviewer.name}} on {{format_date created_at}}
           </p>
         </div>
+          <div class="comment-box">
+            <div class="comment-box-header">Comments</div>
+              {{#each comments as |comment|}}
+              <div class="comment-box-item">User: {{user.user_name}}</div>
+              <div class="comment-item">{{comment.comment_text}}</div>
+              {{/each}}
+          </div>
       </div>
     </div>  
   </div>
