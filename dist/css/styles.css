@@ -107,10 +107,10 @@ main {
   font-size: 22px;
   font-weight: 600;
 }
-.wrapper .poll-form{
+.wrapper .poll-area{
   margin: 20px 0 15px 0;
 }
-.poll-form label{
+.poll-area label{
   display: block;
   margin-bottom: 10px;
   padding: 8px 15px;
@@ -211,7 +211,7 @@ label .row .circle::after{
   top: 2px;
   display: none;
 }
-.poll-form label:hover .row .circle::after{
+.poll-area label:hover .row .circle::after{
   display: block;
   background: #e6e6e6;
 }
