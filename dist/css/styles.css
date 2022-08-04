@@ -11522,13 +11522,13 @@ color: gold;
 
 .redBtn {
 color:blue;
-display: flex;
+display: block;
 justify-content: center;
 }
 
 .greenBtn {
 color:green;
-display: flex;
+display: block;
 justify-content: center;
 }
 
