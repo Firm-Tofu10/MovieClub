@@ -11507,22 +11507,24 @@ color: gold;
 }
 
 .textBox {
- display:flex;
+ display:hide;
  justify-content: center;
  flex-direction: row;
 }
 .stars {
-  display: flex;
+  display: none;
   justify-content: center;
   flex-direction: row;
 }
 
 .redBtn {
 color:blue;
+display: block;
 }
 
 .greenBtn {
 color:green;
+display: hide;
 }
 
 .background {
