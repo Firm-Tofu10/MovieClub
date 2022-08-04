@@ -87,6 +87,17 @@ main {
   flex-direction: column;
 }
 
+
+.poll {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .wrapper{
   margin: 10px auto 10px auto;
   display: flex;
@@ -11537,14 +11548,14 @@ color: gold;
 }
 
 .redBtn {
-color: blue;
-display: flex;
+color:blue;
+display: block;
 justify-content: center;
 }
 
 .greenBtn {
-color: green;
-display: flex;
+color:green;
+display: block;
 justify-content: center;
 }
 
