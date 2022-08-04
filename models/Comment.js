@@ -15,10 +15,6 @@ Comment.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        user_name: {
-            type: DataTypes.STRING,
-            allowNull: true,
-        },
         review_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
