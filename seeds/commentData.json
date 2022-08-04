@@ -1,0 +1,17 @@
+[
+  {
+    "comment_text": "An excellent review of an excellent movie.",
+    "review_id": 1,
+    "user_id": 1
+  },
+  {
+    "comment_text": "Worst theme park I've ever seen.",
+    "review_id": 2,
+    "user_id": 2
+  },
+  {
+    "comment_text": "Great reference to the face melting.",
+    "review_id": 3,
+    "user_id": 3
+  }
+]

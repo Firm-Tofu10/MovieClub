@@ -11516,7 +11516,6 @@ color: gold;
 }
 
 .textBox {
- display:hide;
  justify-content: center;
  flex-direction: row;
 }
@@ -11537,7 +11536,7 @@ justify-content: center;
   background-image: url(../assets/img/jefferson-santos-9SoCnyQmkzI-unsplash.jpg);
 }
 
-hideMe {
+.hideMe {
   display: none;
 }
 
