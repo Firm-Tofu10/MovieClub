@@ -12,6 +12,7 @@
           <p class="post-meta">
             Posted by {{reviewer.name}} on {{format_date review.created_at}}
           </p>
+          {{#if logged_in}}
           <form>
             <div class="card p-3">
               <div class="stars">
@@ -32,11 +33,12 @@
               <input class="textBox" type="text" placeholder="user review">
             </div>
           </form>
-
+          {{/if}}
         </div>
       </div>
     </div>  
   </div>
+  <hr>
 {{/each}}
 </main>
 {{!-- CLOSE MAIN CONTENT WITH </main>!!! --}}
