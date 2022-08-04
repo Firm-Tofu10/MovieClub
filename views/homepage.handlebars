@@ -12,41 +12,33 @@
           <p class="post-meta">
             Posted by {{reviewer.name}} on {{format_date review.created_at}}
           </p>
-          {{!-- {{#if logged_in}}
-          <p>WHAT'S HAPPENING</p>
-          {{/if}} --}}
-
-
-          {{#if logged_in}}
-          User Manipulation! Should only work when logged in, not working.
-          <form>
+          {{!-- {{#if logged_in}} --}}
+         <form>
             <div class="card p-3">
-              <button type="button" onclick="unHide()" class="redBtn">Review Movie</button>
-              <div id="show" class="hideMe">
-                <div id="illHide" class="stars">
-                  <button class="greenBtn">Submit</button>
-                  <input class="textBox" type="text" placeholder="user review">
-                  <div class="fiveToOne">
-                    <input type="radio" id="One" name="rate" value="1">
-                    <label for="One"></label>
-                    <input type="radio" id="two" name="rate" value="2">
-                    <label for="two"></label>
-                    <input type="radio" id="three" name="rate" value="3">
-                    <label for="three"></label>
-                    <input type="radio" id="four" name="rate" value="4">
-                    <label for="four"></label>
-                    <input type="radio" id="five" name="rate" value="5">
-                    <label for="five"></label>
-                    <span class="result"></span>
-                  </div>
+              <button type="button" onclick="unHide('show_{{review.id}}')" class="redBtn">Review Movie</button>
+              <div id="show_{{review.id}}" class="hideMe">
+                <div id="illHide_{{review.id}}" class="stars">
+                <button class="greenBtn">Submit</button>
+                <input class="textBox" type="text" placeholder="user review">
+                <div class="fiveToOne">
+                  <input type="radio" id="radioStar_{{review.id}}" name="rate_{{review.id}}" value="1">
+                  <label for="radioStar_{{review.id}}"></label>
+                  <input type="radio" id="radioStar_{{review.id}}" name="rate_{{review.id}}" value="2">
+                  <label for="radioStar_{{review.id}}"></label>
+                  <input type="radio" id="radioStar_{{review.id}}" name="rate_{{review.id}}" value="3">
+                  <label for="radioStar_{{review.id}}"></label>
+                  <input type="radio" id="radioStar_{{review.id}}" name="rate_{{review.id}}" value="4">
+                  <label for="radioStar_{{review.id}}"></label>
+                  <input type="radio" id="radioStar_{{review.id}}" name="rate_{{review.id}}" value="5">
+                  <label for="radioStar_{{review.id}}"></label>
+                  <span class="result"></span>
                 </div>
                 </p>
               </div>
             </div>
-          </form>
-          {{/if}}
-
-
+        </div>
+        </form>
+          {{!-- {{/if}} --}}
         </div>
       </div>
     </div>  
@@ -58,7 +50,7 @@
 
       <div class="wrapper">
       <header>What movie should Max Powers review next?</header>
-      <div class="poll-form">
+      <div id="poll-form" class="poll-form">
         <input type="checkbox" name="poll" id="movie1" value="movie1">
         <input type="checkbox" name="poll" id="movie2" value="movie2">
         <input type="checkbox" name="poll" id="movie3" value="movie3">
