@@ -14,14 +14,12 @@
           </p>
           {{!-- {{#if logged_in}}
           <p>WHAT'S HAPPENING</p>
-          {{else}}
-          <p>NO SERIOUSLY</p>
-          {{/if}}
-          {{#if logged_in}} --}}
+          {{/if}} --}}
 
 
-        {{!-- User Manipulation! Should only work when logged in, not working. --}}
-          {{!-- <form>
+          {{#if logged_in}}
+          User Manipulation! Should only work when logged in, not working.
+          <form>
             <div class="card p-3">
               <button type="button" onclick="unHide()" class="redBtn">Review Movie</button>
               <div id="show" class="hideMe">
@@ -45,9 +43,10 @@
                 </p>
               </div>
             </div>
-          </form> --}}
+          </form>
+          {{/if}}
 
-          {{!-- {{/if}} --}}
+
         </div>
       </div>
     </div>  
