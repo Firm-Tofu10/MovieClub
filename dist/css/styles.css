@@ -81,6 +81,12 @@ main {
   padding: 20px;
   margin: 0 5% 0 5%
 }
+
+.img-hold {
+  display: flex;
+  flex-direction: column;
+}
+
 .poll {
   margin: 0;
   padding: 0;
@@ -89,7 +95,12 @@ main {
   align-items: center;
   justify-content: center;
 }
+
+
 .wrapper{
+  margin: 10px auto 10px auto;
+  display: flex;
+  flex-direction: column;
   padding: 30px;
   background: #fff;
   max-width: 500px;
@@ -99,7 +110,7 @@ main {
 
 @media (max-width:675px){
     .wrapper{
-        max-width: 300px;
+        max-width: 90%;
 }
 }
 
@@ -11449,16 +11460,6 @@ header.masthead .site-heading .h1 {
   }
 }
 
-.stars {
-  position: flex;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 500px;
-  height: 150px;
-}
-
 /* fix TODO backwards stars */
 .fiveToOne input {
   display: none;
@@ -11495,8 +11496,8 @@ color: gold;
 }
 
 #Alien {
-  width: 600px;
-  height: 600px;
+  width: 100%;
+  height: auto;
   justify-content: center;
   flex-direction: row;
   display: flex;
@@ -11510,7 +11511,7 @@ color: gold;
 }
 
 .title {
-  color: black;
+  color: #fff;
 }
 
 .textBox {
@@ -11518,22 +11519,55 @@ color: gold;
  justify-content: center;
  flex-direction: row;
 }
-.stars {
-  display: none;
-  justify-content: center;
-  flex-direction: row;
-}
 
 .redBtn {
 color:blue;
-display: block;
+display: flex;
+justify-content: center;
 }
 
 .greenBtn {
 color:green;
-display: hide;
+display: flex;
+justify-content: center;
 }
 
 .background {
   background-image: url(../assets/img/jefferson-santos-9SoCnyQmkzI-unsplash.jpg);
+}
+
+hideMe {
+  display: none;
+}
+
+.hideMe2 {
+  display: none;
+}
+
+.hideMe3 {
+  display: none;
+}
+
+.stars {
+  text-align: center;
+  /* display: flex; */
+  display: block;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.stars2 {
+  text-align: center;
+  /* display: flex; */
+  display: block;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.stars3 {
+  text-align: center;
+  /* display: flex; */
+  display: block;
+  justify-content: center;
+  flex-direction: row;
 }
