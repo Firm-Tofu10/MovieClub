@@ -11186,7 +11186,7 @@ hr {
 }
 
 p {
-  margin: 2rem 0;
+  margin: 0.5rem 0;
 }
 p a {
   text-decoration: underline;
@@ -11509,14 +11509,31 @@ color: gold;
  flex-direction: row;
 }
 
+.comment-box {
+  border: solid 2px black;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-box-header {
+  margin: 0;
+  text-align: center;
+  padding: 4px;
+  border-bottom: solid 2px black;
+}
+
+.comment-box-item {
+  padding: 4px;
+}
+
 .redBtn {
-color:blue;
+color: blue;
 display: flex;
 justify-content: center;
 }
 
 .greenBtn {
-color:green;
+color: green;
 display: flex;
 justify-content: center;
 }
