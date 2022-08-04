@@ -4,6 +4,7 @@ const {User, Review, Reviewer} = require('../models');
 const userData = require('./userData.json')
 const reviewerData = require('./reviewerData.json')
 const reviewData = require('./reviewData.json');
+const commentData = require('./commentData.json')
 
 const seedDatabase = async () => {
   await sequelize.sync({force: true});
