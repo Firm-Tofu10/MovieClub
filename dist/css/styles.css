@@ -11452,7 +11452,8 @@ header.masthead .site-heading .h1 {
 
 .stars {
   text-align: center;
-  display: flex;
+  /* display: flex; */
+  display: none;
   justify-content: center;
   flex-direction: row;
 }
@@ -11512,17 +11513,19 @@ color: gold;
 }
 
 .textBox {
- display:flex;
+ display:hide;
  justify-content: center;
  flex-direction: row;
 }
 
 .redBtn {
 color:blue;
+display: flex;
 }
 
 .greenBtn {
 color:green;
+display: flex;
 }
 
 .background {
