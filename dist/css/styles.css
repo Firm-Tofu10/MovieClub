@@ -11197,7 +11197,7 @@ hr {
 }
 
 p {
-  margin: 2rem 0;
+  margin: 0.5rem 0;
 }
 p a {
   text-decoration: underline;
@@ -11518,6 +11518,33 @@ color: gold;
 .textBox {
  justify-content: center;
  flex-direction: row;
+}
+
+.comment-box {
+  border-left: solid 2px black;
+  border-right: solid 2px black;
+  border-top: solid 2px black;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-box-header {
+  margin: 0;
+  text-align: center;
+  padding: 4px;
+  border-bottom: solid 2px black;
+}
+
+.comment-box-item {
+  padding: 4px 4px 0 4px;
+  text-align: justify;
+  vertical-align: middle;
+  word-wrap: normal;
+}
+
+.comment-item {
+  padding: 4px;
+  border-bottom: solid 2px black;
 }
 
 .redBtn {
