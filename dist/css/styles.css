@@ -11450,14 +11450,6 @@ header.masthead .site-heading .h1 {
   }
 }
 
-.stars {
-  text-align: center;
-  /* display: flex; */
-  display: none;
-  justify-content: center;
-  flex-direction: row;
-}
-
 /* fix TODO backwards stars */
 .fiveToOne input {
   display: none;
@@ -11521,13 +11513,51 @@ color: gold;
 .redBtn {
 color:blue;
 display: flex;
+justify-content: center;
 }
 
 .greenBtn {
 color:green;
 display: flex;
+justify-content: center;
 }
 
 .background {
   background-image: url(../assets/img/jefferson-santos-9SoCnyQmkzI-unsplash.jpg);
+}
+
+hideMe {
+  display: none;
+}
+
+.hideMe2 {
+  display: none;
+}
+
+.hideMe3 {
+  display: none;
+}
+
+.stars {
+  text-align: center;
+  /* display: flex; */
+  display: block;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.stars2 {
+  text-align: center;
+  /* display: flex; */
+  display: block;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.stars3 {
+  text-align: center;
+  /* display: flex; */
+  display: block;
+  justify-content: center;
+  flex-direction: row;
 }
