@@ -87,6 +87,17 @@ main {
   flex-direction: column;
 }
 
+
+.poll {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .wrapper{
   margin: 10px auto 10px auto;
   display: flex;
@@ -11505,7 +11516,6 @@ color: gold;
 }
 
 .textBox {
- display:hide;
  justify-content: center;
  flex-direction: row;
 }
@@ -11526,7 +11536,7 @@ justify-content: center;
   background-image: url(../assets/img/jefferson-santos-9SoCnyQmkzI-unsplash.jpg);
 }
 
-hideMe {
+.hideMe {
   display: none;
 }
 
