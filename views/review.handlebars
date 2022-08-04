@@ -13,9 +13,9 @@
         </div>
           {{#if comments}}
           <div class="comment-box">
-            <div class="comment-box-header">Comments</div>
+            <div class="comment-box-header"><h3>Comments</h3></div>
               {{#each comments as |comment|}}
-              <div class="comment-box-item">User: {{user.user_name}}</div>
+              <div class="comment-box-item"><h5>{{user.user_name}}</h5></div>
               <div class="comment-item">{{comment.comment_text}}</div>
               {{/each}}
           </div>
