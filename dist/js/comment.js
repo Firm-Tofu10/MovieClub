@@ -1,7 +1,7 @@
 async function commentFormHandler(event) {
     event.preventDefault();
 
-    const comment_text = document.querySelector('textarea["comment"]').ariaValueMax.trim();
+    const comment_text = document.querySelector('textarea["comment"]').value.trim();
 
     const review_id = window.location.toString().split('/')[window.location.toString().split('/').length -1];
 
