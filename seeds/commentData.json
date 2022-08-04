@@ -13,5 +13,10 @@
     "comment_text": "Great reference to the face melting.",
     "review_id": 3,
     "user_id": 3
+  },
+  {
+    "comment_text": "Superb.",
+    "review_id": 3,
+    "user_id": 4
   }
 ]
