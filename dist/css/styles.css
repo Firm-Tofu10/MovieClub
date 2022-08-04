@@ -82,7 +82,15 @@ main {
   margin: 0 5% 0 5%
 }
 
+.img-hold {
+  display: flex;
+  flex-direction: column;
+}
+
 .wrapper{
+  margin: 10px auto 10px auto;
+  display: flex;
+  flex-direction: column;
   padding: 30px;
   background: #fff;
   max-width: 500px;
@@ -92,7 +100,7 @@ main {
 
 @media (max-width:675px){
     .wrapper{
-        max-width: 300px;
+        max-width: 90%;
 }
 }
 
@@ -11443,13 +11451,10 @@ header.masthead .site-heading .h1 {
 }
 
 .stars {
-  position: flex;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
-  width: 500px;
-  height: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
 /* fix TODO backwards stars */
@@ -11488,8 +11493,8 @@ color: gold;
 }
 
 #Alien {
-  width: 600px;
-  height: 600px;
+  width: 100%;
+  height: auto;
   justify-content: center;
   flex-direction: row;
   display: flex;
@@ -11503,18 +11508,13 @@ color: gold;
 }
 
 .title {
-  color: black;
+  color: #fff;
 }
 
 .textBox {
  display:flex;
  justify-content: center;
  flex-direction: row;
-}
-.stars {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
 }
 
 .redBtn {
