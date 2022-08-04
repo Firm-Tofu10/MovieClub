@@ -65,9 +65,9 @@ router.get('/review/:id', async (req, res) => {
 
 router.get('/profile', withAuth, async (req, res) => {
   try {
-    const userData = await User.findByPk(req.session.user_name, {
+    const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Review }],
+      include: [{ model: Comment }],
     });
 
     const user = userData.get({ plain: true });
@@ -78,7 +78,7 @@ router.get('/profile', withAuth, async (req, res) => {
     });
   } catch (err) {
     res.status(500).json(err);
-    console.log(err);
+    console.log(err)
   }
 });
 
@@ -91,4 +91,7 @@ router.get('/login', (req,res) => {
   res.render('login');
 });
 
+router.get('/logout', (req, res) => {
+  
+})
 module.exports = router;

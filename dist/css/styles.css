@@ -2332,6 +2332,10 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+
+  .signup-title {
+    margin-top: 20px;
+  }
 }
 @media (max-width: 991.98px) {
   .table-responsive-lg {
@@ -11609,4 +11613,40 @@ justify-content: center;
 
 .post-title {
   text-align: center;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-input {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.form-btn {
+  width: inherit;
+}
+
+.form {
+  width: 70%;
+}
+
+.navbar-nav > .nav-item > .no-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.0625em;
+  text-transform: uppercase;
 }

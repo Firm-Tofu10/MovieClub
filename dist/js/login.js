@@ -33,7 +33,7 @@ const signupFormHandler = async (event) => {
             headers: { 'Content-Type': 'application/json' },
         });
 
-        if (resonose.ok) {
+        if (response.ok) {
             document.location.replace('/profile');
         } else {
             alert(response.statusText);
@@ -46,5 +46,5 @@ document
     .addEventListener('submit', loginFormHandler);
 
 document
-    .querySelector('signup-form')
+    .querySelector('.signup-form')
     .addEventListener('submit', signupFormHandler);

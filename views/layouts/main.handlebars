@@ -29,10 +29,10 @@
             <ul class="navbar-nav ms-auto py-4 py-lg-0">
               {{!-- All of these need associated routes. Or some of them, if we don't use all of them --}}
               <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</a></li>
-              <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="_">About/Contact</a></li>
+              {{!-- <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="_">About/Contact</a></li> --}}
               {{#if logged_in}}
                 <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/profile">Profile</a></li>
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Log Out</a></li>
+                <li class="nav-item"><button class="no-button nav-link px-lg-3 py-3 py-lg-4" id="logout" type="logout">Log Out</button></li>
               {{else}}
                 <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/login">Login</a></li>
               {{/if}}
