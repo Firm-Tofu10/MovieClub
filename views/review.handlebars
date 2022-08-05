@@ -20,7 +20,24 @@
               {{/each}}
           </div>
           {{/if}}
+          {{#if logged_in}}
+          <form class="comment-form">
+            <div class="comments">
+              <section class="comment">
+                <div class="text">
+                  <textarea id="comment-txt" class="comment-text"></textarea>
+                </div>
+              </section>
+            </div>
+            <div class="comment-btn-holder">
+              <button type="submit">Add Comment</button>
+            </div>
+          </form>
+          {{/if}}
       </div>
     </div>  
   </div>
+
 </main>
+
+<script src="/js/comment.js"></script>

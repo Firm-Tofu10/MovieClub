@@ -1,5 +1,4 @@
   {{#each reviews as |review|}}
-  {{!-- <script type="text/javascript" src="../js/scripts.js"></script> --}}
   <div class="container px-4 px-lg-5">
     <div class="row gx-4 gx-lg-5 justify-content-center">
       <div class="col-md-10 col-lg-8 col-xl-7">
@@ -13,7 +12,7 @@
           <p class="post-meta">
             Posted by {{reviewer.name}} on {{format_date review.created_at}}
           </p>
-          {{!-- {{#if logged_in}} --}}
+          {{#if logged_in}}
          <form>
             <div class="card p-3">
               <button type="button" onclick="unHide('show_{{review.id}}')" class="redBtn">Review Movie</button>
@@ -34,12 +33,12 @@
                   <label for="radioStar_{{review.id}}"></label>
                   <span class="result"></span>
                 </div>
+                </p>
               </div>
-              </p>
             </div>
         </div>
         </form>
-          {{!-- {{/if}} --}}
+          {{/if}}
         </div>
       </div>
     </div>  
