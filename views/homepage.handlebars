@@ -12,7 +12,7 @@
           <p class="post-meta">
             Posted by {{reviewer.name}} on {{format_date review.created_at}}
           </p>
-          {{!-- {{#if logged_in}} --}}
+          {{#if logged_in}}
          <form>
             <div class="card p-3">
               <button type="button" onclick="unHide('show_{{review.id}}')" class="redBtn">Review Movie</button>
@@ -38,7 +38,7 @@
             </div>
         </div>
         </form>
-          {{!-- {{/if}} --}}
+          {{/if}}
         </div>
       </div>
     </div>  
