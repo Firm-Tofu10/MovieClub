@@ -23,7 +23,7 @@ router.post('/login', async (req, res) => {
             return;
         }
         req.session.save(() => {
-            req.session.reviewer_id = reviewerData.isSoftDeleted;
+            req.session.reviewer_id = reviewerData.id;
             req.session.logged_in = true;
 
             res.json({ reviewer: reviewerData, message: 'Logged in!' });
