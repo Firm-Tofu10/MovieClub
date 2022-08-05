@@ -267,7 +267,7 @@ input[type="checkbox"]{
 
 input[type="button"],
 input[type="submit"]{
-  display: block;
+  display: none;
 }
 
 body {
@@ -11493,18 +11493,12 @@ header.masthead .site-heading .h1 {
   content:'★';
 }
 
-.fiveToOne input:checked ~ label{
+.fiveToOne > label.selectall {
   color: gold;
 }
 
-.fiveToOne:not(:checked) > label:hover,
-.fiveToOne:not(:checked) > label:hover ~ label{
-color: gold;
-}
-
-.fiveToOne input:checked > label:hover,
-.fiveToOne input:checked > label:hover ~ label{
-color: gold;
+.fiveToOne > label.selected ~ label {
+color: grey;
 }
 .fiveToOne{
   display: flex;
@@ -11535,6 +11529,7 @@ color: gold;
 .textBox {
  justify-content: center;
  flex-direction: row;
+ display: block;
 }
 
 .comment-box {
