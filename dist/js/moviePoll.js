@@ -36,11 +36,6 @@ for (let i = 0; i < options.length; i++) {
   });
 }
 // to do find parent div with class = fiveToOne
-const starLabels = document.querySelectorAll(".fiveToOne > label");
-for (let i = 0; i < starLabels.length; i++) {
-  starLabels[i].addEventListener("click", (evt)=>{
-  console.log("starLabelsClicked",evt.target.parentNode.querySelectorAll("label"));
-    // handle lable click here
-  });
-}
+
+// handle lable click here
 // evt selected
