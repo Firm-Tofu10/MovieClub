@@ -39,8 +39,13 @@ for (let i = 0; i < options.length; i++) {
 const starLabels = document.querySelectorAll(".fiveToOne > label");
 for (let i = 0; i < starLabels.length; i++) {
   starLabels[i].addEventListener("click", (evt)=>{
-  console.log("starLabelsClicked",evt.target.parentNode.querySelectorAll("label"));
-    // handle lable click here
-  });
-}
+    console.log("starLabelsClicked",evt.target.parentNode.querySelectorAll("label"));
+    for (let j = 0; j < starLabels.length; j++) {
+      if(starLabels.contains("selected")){
+        starLabels.remove("selected")
+      }
+}})
+};
+
+// handle lable click here
 // evt selected
