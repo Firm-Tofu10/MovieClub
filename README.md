@@ -17,7 +17,7 @@ A popular movie reviewer's blog where visitors can comment and interact with the
 
 ## Deployment
 
-[View Website](https://movieclub3.herokuapp.com/login)
+via [Heroku](https://movieclub3.herokuapp.com/login)
 
 ## Contributing
 
