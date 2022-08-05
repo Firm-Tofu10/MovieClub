@@ -23,9 +23,11 @@ const sess = {
   })
 };
 
-app.use(session(sess))
+app.use(session(sess));
+
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
+
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname, 'dist')));
@@ -33,7 +35,6 @@ app.use(express.static(path.join(__dirname, 'dist')));
 app.use(routes);
 
 sequelize.sync({force: false}).then(() => {
-  console.log(PORT)
   app.listen(PORT, () => console.log(`Server listening at http://localhost:${PORT}`))
 });
 
