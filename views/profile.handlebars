@@ -9,7 +9,7 @@
       <h5>Your Comments:</h5>
           {{#each comments as |comment|}}
           <ul class="comments-list">
-              <li>{{comment.comment_text}}</li>
+            <li>"{{comment.comment_text}}" on <a href="/review/{{review.id}}">{{review.title}}</a></li>
           </ul>
           {{/each}}
   </div>
